@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
+import Nav from "./Nav"
+import Banner from "./Banner"
+import Posts from "./Posts"
+import Login from "./Login";
+
 
 function App() {
+  const [isclick, setisclick] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav popup={() => {
+        setisclick(true)
+      }} />
+      <Banner popup={() => {
+        setisclick(true)
+      }} />
+      <Posts popup={() => {
+        setisclick(true)
+      }} />
+      {
+        isclick && <Login close={() => { setisclick(false) }} />
+      }
     </div>
   );
 }

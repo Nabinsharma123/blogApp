@@ -1,0 +1,103 @@
+.postData {
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.postData_contents {
+    padding: 20px;
+}
+
+.postData_banner {
+    object-fit: contain;
+    width: 100%;
+}
+
+.postData_type {
+    padding: 10px;
+}
+
+.postData_type h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.postData_heading h1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.postData_content h1 {
+
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.postData_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postData_bottom .postData_writer h1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.postData_bottom h1 {
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin: 0;
+}
+
+.postData_writer {
+    display: flex;
+    align-items: center;
+}
+
+.postData_writer_image {
+
+    margin-right: 10px;
+
+}
+
+@media(max-width:500px) {
+
+    .postData_heading h1 {
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .postData_content h1 {
+
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+    }
+}
